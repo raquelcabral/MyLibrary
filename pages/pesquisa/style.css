@@ -1,0 +1,41 @@
+body {
+    background-image: url("/img/Background.jpg");   
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed    ;
+} 
+
+header .title {
+    font-size: 35px;
+}
+
+header h5 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 50rem;
+    margin-bottom: 100rem;
+    padding: 0 100px;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+input {
+    width: 284px;
+    height: 45px;
+    background: rgb(196, 196, 196, 0.25);
+    text-align: center;
+    border: none;
+}
+
+input:hover {
+    background: linear-gradient(100deg,#e5194d 7%,#8c18f1 93%);
+}
