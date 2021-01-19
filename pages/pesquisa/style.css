@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+
+* {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
 body {
     background-image: url("/img/Background.jpg");   
     height: auto;
@@ -8,20 +14,22 @@ body {
 } 
 
 header .title {
-    font-size: 35px;
+    font-size: 45px;
+}
+
+header p {
+    font-style: italic;
+    margin-left: 5%;
 }
 
 header h5 {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 25px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    padding: 50rem;
-    margin-bottom: 100rem;
-    padding: 0 100px;
+.container {
+    margin-left: 5%;
+    margin-bottom: 20px;
 }
 
 ::placeholder {
@@ -31,11 +39,44 @@ form {
 input {
     width: 284px;
     height: 45px;
-    background: rgb(196, 196, 196, 0.25);
+    background: rgb(196, 196, 196, 0.50);
     text-align: center;
     border: none;
 }
 
 input:hover {
-    background: linear-gradient(100deg,#e5194d 7%,#8c18f1 93%);
+    background: linear-gradient(100deg,#e47979 7%,#7e2ac7 93%);
+}
+
+input:focus {
+    outline: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+button {
+    width: 200px;
+    height: 45px;
+    background: rgb(196, 196, 196, 0.50);
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+}
+
+button:hover {
+    background: linear-gradient(100deg,#e47979 7%,#7e2ac7 93%);
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:active {
+    background: linear-gradient(100deg, #7e2ac7 7%, #e47979 93%);
+    box-shadow: 0 5px rgb(122, 127, 206);
+    transform: translateY(5px);
 }
